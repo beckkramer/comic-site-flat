@@ -47,17 +47,15 @@ if($hasPageInfo == true){
 		<?php
 	}
 
+} else {
+	?>
+	<section id="main-panel">			
+		<article>
+			<h1>Page not found.</h1>
+			<p>Sorry, but that page isn't found. Please <a href="<?php echo $site_info->root; ?>/archive.php">visit the archive</a>.</p>
+		</article>
+	</section>
+	<?php
 }
-	
-
-
-
 
 ?>
-<!--
-<section id="main-panel">			
-			<article>
-				<h1><?php echo $current_page->name; ?></h1>
-				<?php echo $current_page->description; ?>
-			</article>
-		</section>-->

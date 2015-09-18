@@ -22,9 +22,6 @@ if($_GET && isset($_GET["page"])){
 
 	if($rightnow > $current_page->post_date){
 		$hasPageInfo = true;
-	} else {
-		echo "No page found.";
-		//$current_page = $comic->getPageList();
 	}
 
 } else {
