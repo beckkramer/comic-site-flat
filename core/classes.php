@@ -1,6 +1,8 @@
 
 <?php
 
+include(config.php);
+
 /*
 DB Connection
 */
@@ -9,10 +11,6 @@ function db_connect()
 {
 	$db_host = 'localhost';
 	$site_info = new SiteInfo;
-
-	$db_name = 'DATABASE_NAME';
-	$db_user = 'DATABASE_USER';
-	$db_pass = 'DATABASE_Password';
 
 	// Check if local version for QA or remote
 	if($site_info->host == 'localhost') {
