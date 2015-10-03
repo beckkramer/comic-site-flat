@@ -1,7 +1,7 @@
 
 <?php
 
-include(config.php);
+include('config.php');
 
 /*
 DB Connection
@@ -9,6 +9,11 @@ DB Connection
 
 function db_connect()
 {
+
+	global $db_name;
+	global $db_user;
+	global $db_pass;
+
 	$db_host = 'localhost';
 	$site_info = new SiteInfo;
 
