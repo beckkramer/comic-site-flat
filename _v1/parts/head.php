@@ -14,6 +14,7 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="<?php echo $page_info['root']; ?>/style.css" />
-	<script type="text/javascript" src="<?php echo $page_info['root']; ?>/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="<?php echo $page_info['root']; ?>/assets/css/resets.css" />
+	<link rel="stylesheet" href="<?php echo $page_info['root']; ?>/assets/css/style.css" />
+	<script type="text/javascript" src="<?php echo $page_info['root']; ?>/assets/js/jquery-1.11.1.min.js"></script>
 </head>
