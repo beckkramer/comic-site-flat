@@ -20,29 +20,21 @@ include('parts/head.php');
 
 <body>
 <div id="content">
-	<?php include('parts/header.php');
+	<?php
+	include('parts/header.php');
 	//include('parts/page-content.php');
 	?>
 
-	<style>
-	.nav-tile {
-		display: block;
-		margin: 15px 0;
-	}
-	</style>
-
-	<a class="nav-tile" href="part-1-reentry/page.php?page=1"><img src="images/site/hp-nav-part1.png" alt="Read Part 1: Reentry" /></a>
-
-	<a class="nav-tile" href="part-2-orbit/page.php?page=0"><img src="images/site/hp-nav-part2.png" alt="Read Part 2: Orbit" /></a>
+	<section id="main-panel">
+		<img src="images/site/teaser.png" />
+		<p>When Irina Novak set off on NASA’s first light speed travel mission, She knew the flight would change her life.</p>
+		<p>She just had no idea how much.</p>
+		<h3>Read:</h3>
+		<p>&gt; <a href="part-1-reentry/page.php?page=1">The First Page</a> &lt;</p>
+		<p>&gt; <a href="<?php echo $current_chapter->folder . '/page.php?page=' . $lastPage['number']; ?>">The Most Recent Page</a> &lt;</p>
+	</section>
 
 	<? include('parts/foot.php');	?>
-	<!--
-	<section id="main-panel">
-		<img style="margin: 0 auto" src="http://relativitycomic.com/images/site/updates/part2Teaser.png" width="600" title="Part 2: Orbit starts March 25 2015" alt="Part 2: Orbit starts March 25 2015" />
-		<aside class="has-tiles">			
-			<a class="tile part1" href="http://relativitycomic.com/part-1-reentry/page.php?page=1"><span>Read Part 1:</span> Reentry</a>
-		</aside>
-	</section>
-	-->
+
 </div>
 </body>
