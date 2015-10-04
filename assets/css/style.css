@@ -202,6 +202,7 @@ nav ul.read {
 img.main {
     display: block;
     margin: 0 auto;
+    border: 1px solid #e2e2e2;
 }
 
 
@@ -317,18 +318,18 @@ main a, #main-panel a {
     border-top: 1px solid #666;
 }
 
-#main-panel ul.page-list {
+ul.page-list {
     list-style-type: none;
     margin: 1em 0;
 }
 
-#main-panel ul.page-list:after {
+ul.page-list:after {
     content: " ";
     clear: both;
     display: block;
 }
 
-#main-panel ul.page-list li {
+ul.page-list li {
     width: 33%;
     display: block;
     float: left;
@@ -336,11 +337,11 @@ main a, #main-panel a {
     margin-bottom: 1em;
 }
 
-#main-panel ul.page-list li img {
+ul.page-list li img {
     max-width: 100%;
 }
 
-#main-panel p.post-date {
+p.post-date {
     font-size: 11px;
 }
 
