@@ -21,7 +21,7 @@ $chapter_path =  $site_info->root . '/part-' . $current_chapter->number . '-' . 
 		</ul>
 		<?php endif; ?>
 	</li><li class="cur-page">
-		Page <?php echo $current_page->page_num; ?> <span>of <?php echo $pageNav->last_page_num; ?></span>
+		Part <?php echo CURRENT_CHAPTER; ?>, <span>Page <?php echo $current_page->page_num; ?> of <?php echo $pageNav->last_page_num; ?></span>
 	</li><li class="next-links">
 		<?php if($current_page->page_num != $pageNav->last_page_num): ?>
 		<ul>

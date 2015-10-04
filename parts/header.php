@@ -20,7 +20,6 @@
 				<li class="close">- close -</li>
 			</ul>
 		</li>
-		<li> &bull; <a href="<?php echo $site_info->root; ?>/part-1-reentry/page.php?page=1">Read from the Beginning</a></li>
 		<li> &bull; Updates Wednesdays</li>
 	</ul>		
 </header>

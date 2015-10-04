@@ -7,9 +7,14 @@ html {
 
 body,
 input,
-textarea 			{ font-size:16px; }
+textarea {
+    font-size:16px;
+}
 
-a { color:#f2f2f2; text-decoration: none; }
+a {
+    color:#1a56a1;
+    text-decoration: none;
+}
 
 a:hover,
 span.modalToggle:hover,
@@ -23,15 +28,17 @@ span.modalToggle:hover,
     color:#727272;
 }
 
-img { max-width: 100%; height:auto; }
+img {
+    max-width: 100%;
+    height:auto;
+}
 
 body { 
-	color:#999;
+	color:#484848;
 	font-family: 'ecom', Arial, Helvetica, sans-serif;
     min-height:100%;
     height:100%;
 	text-transform: uppercase;
-	background: #302f33;
 }
 body header,
 body footer,
@@ -43,11 +50,11 @@ body>div {
 
 @font-face {
     font-family: 'ecom';
-    src: url('fonts/economicafsReg-webfont.eot');
-    src: url('fonts/economicafsReg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/economicafsReg-webfont.woff') format('woff'),
-         url('fonts/economicafsReg-webfont.ttf') format('truetype'),
-         url('fonts/economicafsReg-webfont.svg#ecom_neueregular') format('svg');
+    src: url('../fonts/economicafsReg-webfont.eot');
+    src: url('../fonts/economicafsReg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/economicafsReg-webfont.woff') format('woff'),
+         url('../fonts/economicafsReg-webfont.ttf') format('truetype'),
+         url('../fonts/economicafsReg-webfont.svg#ecom_neueregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -135,7 +142,7 @@ h1 {
 	font-weight: normal;
 	margin:0px;
 }
-h1, h1 a { color:#fff; }
+h1, h1 a { color: rgb(18,59,109); }
 h2 {
 	font-size: 1.5em;
 	letter-spacing: 1px;
@@ -162,10 +169,13 @@ nav {
 	display: block;
 }
 
-nav ul li {
+nav ul li,
+ul.social li {
 	display: inline-block;
     padding: 0 0.5em;
-    border-left: 1px solid #666;
+}
+nav ul li {
+    border-left: 1px solid #fff;
 }
 nav ul li:first-child {
     border-left: none;
@@ -175,15 +185,14 @@ nav>ul {
 	margin: 0;
 }
 nav.main {
-    background: rgb(10,10,10);
-    background:  rgba(10,10,10,.6);
+    background: rgba(18,59,109,.1);
     margin-bottom: 1em;
     line-height: 1.75em;
 }
 nav ul.site {
     float: left;
 }
-nav ul.social {
+nav ul.read {
     float: right;
 }
 
@@ -219,8 +228,6 @@ nav.social .tumblr a:hover { background-position: -70px -35px; }
     display: block;
     max-width: 750px;
     margin: 0 auto;
-    background: rgb(25,25,25);
-    background:  rgba(25,25,25,.6);
     overflow: hidden;
 }
 
@@ -239,7 +246,7 @@ nav.social .tumblr a:hover { background-position: -70px -35px; }
 .page-nav ul li {
     display: inline-block;
     padding: 0 0.5em;
-    border-left: 1px solid #666;
+    vertical-align: baseline;
 }
 .page-nav ul li:first-child {
     border-left: none;
@@ -257,20 +264,20 @@ nav.social .tumblr a:hover { background-position: -70px -35px; }
 .page-nav li.next-links a {
     margin-left: 1em;
 }
+.page-nav .cur-page {
+    line-height: 2.2em;
+    font-size: .8em;
+}
 .page-nav .cur-page span {
     white-space: nowrap;
 }
 
-main, #main-panel {
-    display: block;
+main{
     box-sizing: border-box;
     margin:1em auto;
     width:75%;
     max-width: 1000px;
     padding: 1em;
-    background:#333;
-    background: rgb(25,25,25);
-    background:  rgba(25,25,25,.6);
     border-radius: 3px;
     line-height: 1.35em;
     position: relative;
@@ -371,8 +378,7 @@ main a, #main-panel a {
 #foot {
     margin: 1em 0 0;
     padding: 0 0 1em;
-    background: rgb(10,10,10);
-    background:  rgba(10,10,10,.6);
+    background: rgba(18,59,109,.1);
     bottom: 0;
     position: relative;
     clear: both;
@@ -380,14 +386,14 @@ main a, #main-panel a {
 }
 
 #foot nav.main {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #fff;
     background: none;
 }
 #foot nav ul.site {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #fff;
 }
 #foot nav ul.site,
-#foot nav ul.social {
+#foot nav ul.read {
     float: none;
     text-align: center;
     display: block;
@@ -430,28 +436,16 @@ main a, #main-panel a {
         width: 100%;
     }
     nav ul.site,
-    nav ul.social {
+    nav ul.read {
         float: none;
         text-align: center;
         width: 100%;
     }
-    nav ul.site {
-        border-bottom: 1px solid #666;
-    }  
 
     .page-nav ul li {
         display: block;
         padding: 0.5em;
         border-left: none;
-    }
-    .page-nav ul li:first-child {
-        border-bottom: 1px solid #666;
-    }
-    .page-nav .cur-page {
-        height: 4em;
-        padding-top:2em;
-        border-left: 1px solid #666;
-        border-right: 1px solid #666;
     }
     
 }

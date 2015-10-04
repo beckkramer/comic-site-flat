@@ -53,7 +53,7 @@ class SiteInfo {
 		$shim = '';
 
 		if($parsedUrl['host'] == 'localhost') {
-			$shim = '/relativity';
+			$shim = '/comic-site-flat';
 		}
 
 		$this->host = $parsedUrl['host'];
