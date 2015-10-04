@@ -149,10 +149,10 @@ h1, h1 a { color: rgb(18,59,109); }
 h2 {
 	font-size: 1.5em;
 	letter-spacing: 1px;
-	color:#c2c2c2;
-    margin: 1em 0 0;
+    
 }
 h2,h3 {
+    margin: 1em 0 0;
 	font-weight: normal;
 }
 h2 span {

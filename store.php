@@ -1,8 +1,17 @@
 <?php
-
+define ('CURRENT_CHAPTER', 2);
 include_once('core/classes.php');
+
 $site_info = new SiteInfo;
+$comic = new Comic;
+$nav = new Navigation;
+$chapter = new Chapter;
 $hasPageInfo = false;
+
+$lastPage = $nav->getLastPage();
+$current_chapter = $chapter->getChapterByNumber(CURRENT_CHAPTER);
+$chapters = $chapter->getChapters();
+$current_page = $comic->getPageByNumber($lastPage['number']);
 
 include('parts/head.php');
 
