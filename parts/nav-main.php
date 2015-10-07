@@ -9,6 +9,6 @@
 	<ul class="read">
 		<li>Read:</li>
 		<li><a href="part-1-reentry/page.php?page=1">The First Page</a></li>
-		<li><a href="part-2-orbit/page.php?page=<?php $lastPage['number']; ?>">The Most Recent Page</a></li>
+		<li><a href="part-2-orbit/page.php?page=<?php echo $lastPage['number']; ?>">The Most Recent Page</a></li>
 	</ul>
 </nav>
